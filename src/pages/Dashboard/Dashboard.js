@@ -1,7 +1,16 @@
+import { BrowserRouter as Router, Routes , Route, Link } from 'react-router-dom'
+import Navbar from '../../components/Navbar'
 
 const Dashboard = () => {
-    return <Navbar></Navbar>
-    return <div>Dashboard</div>
+
+    return (
+        <>
+        <div>
+            <Navbar />
+                <Link to="#" path="/"  />
+        </div>
+        </>
+    )
 }
 
 
