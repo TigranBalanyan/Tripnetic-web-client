@@ -8,7 +8,9 @@ function Login() {
 
   const [showPassword, setShowPassword] = useState(false);
   
-  const { loginWithRedirect } = useAuth0();
+  const LoginButton = () => {
+    const { loginWithRedirect } = useAuth0(); 
+  }
   
   const [token, setToken] = useState();
   return (
@@ -24,7 +26,7 @@ function Login() {
         </label>
         <p></p>
         <div>
-          <Button variant="contained" type="submit" onClick={()=>loginWithRedirect()}>Login</Button>
+          <Button variant="contained" type="submit" onClick={ ()=> loginWithRedirect() }>Login</Button>
         </div>
       </form>
     </div>
